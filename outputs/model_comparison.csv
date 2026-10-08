@@ -1,0 +1,4 @@
+Model,Accuracy,Detection Rate (%),False Positive Rate (%),Precision (Macro),Recall (Macro),F1-Score (Macro),F1-Score (Weighted)
+K-Means + Naïve Bayes (Proposed),58.99,64.34,5.24,0.3655,0.4065,0.3326,0.529
+Naïve Bayes Baseline,44.16,53.27,39.18,0.493,0.4074,0.3036,0.461
+Decision Tree Baseline,76.1,66.76,6.64,0.8558,0.5265,0.5393,0.7354

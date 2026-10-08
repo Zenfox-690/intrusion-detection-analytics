@@ -1,0 +1,317 @@
+{
+    "K-Means + Na\u00efve Bayes (Proposed)": {
+        "model_name": "K-Means + Na\u00efve Bayes (Proposed)",
+        "accuracy": 0.5898687012065295,
+        "precision_macro": 0.365461398843591,
+        "recall_macro": 0.40652278871998304,
+        "f1_macro": 0.3325970291846889,
+        "precision_weighted": 0.602181656754415,
+        "recall_weighted": 0.5898687012065295,
+        "f1_weighted": 0.5289977186704157,
+        "detection_rate": 0.643419309592457,
+        "false_positive_rate": 0.05241478735454639,
+        "total_normal": 9711,
+        "false_positives": 509,
+        "total_attacks": 12833,
+        "detected_attacks": 8257,
+        "confusion_matrix": [
+            [
+                9202,
+                10,
+                499,
+                0,
+                0
+            ],
+            [
+                1646,
+                2175,
+                3639,
+                0,
+                0
+            ],
+            [
+                134,
+                366,
+                1921,
+                0,
+                0
+            ],
+            [
+                2731,
+                7,
+                147,
+                0,
+                0
+            ],
+            [
+                65,
+                1,
+                1,
+                0,
+                0
+            ]
+        ],
+        "per_class_report": {
+            "Normal": {
+                "precision": 0.66787632457541,
+                "recall": 0.9475852126454536,
+                "f1-score": 0.783515688194474,
+                "support": 9711.0
+            },
+            "DoS": {
+                "precision": 0.8499413833528722,
+                "recall": 0.2915549597855228,
+                "f1-score": 0.43417506737199324,
+                "support": 7460.0
+            },
+            "Probe": {
+                "precision": 0.3094892862896729,
+                "recall": 0.7934737711689385,
+                "f1-score": 0.44529439035697727,
+                "support": 2421.0
+            },
+            "R2L": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 2885.0
+            },
+            "U2R": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 67.0
+            },
+            "accuracy": 0.5898687012065295,
+            "macro avg": {
+                "precision": 0.365461398843591,
+                "recall": 0.40652278871998304,
+                "f1-score": 0.3325970291846889,
+                "support": 22544.0
+            },
+            "weighted avg": {
+                "precision": 0.602181656754415,
+                "recall": 0.5898687012065295,
+                "f1-score": 0.5289977186704157,
+                "support": 22544.0
+            }
+        },
+        "classes": [
+            "Normal",
+            "DoS",
+            "Probe",
+            "R2L",
+            "U2R"
+        ]
+    },
+    "Na\u00efve Bayes Baseline": {
+        "model_name": "Na\u00efve Bayes Baseline",
+        "accuracy": 0.4415809084457062,
+        "precision_macro": 0.49304393032438576,
+        "recall_macro": 0.4073997432489209,
+        "f1_macro": 0.30359703500713275,
+        "precision_weighted": 0.6216438674161883,
+        "recall_weighted": 0.4415809084457062,
+        "f1_weighted": 0.4609689602520074,
+        "detection_rate": 0.5326891607574222,
+        "false_positive_rate": 0.3918237050767171,
+        "total_normal": 9711,
+        "false_positives": 3805,
+        "total_attacks": 12833,
+        "detected_attacks": 6836,
+        "confusion_matrix": [
+            [
+                5906,
+                57,
+                10,
+                3425,
+                313
+            ],
+            [
+                3223,
+                3041,
+                4,
+                1157,
+                35
+            ],
+            [
+                1375,
+                341,
+                237,
+                334,
+                134
+            ],
+            [
+                1394,
+                3,
+                6,
+                726,
+                756
+            ],
+            [
+                5,
+                0,
+                0,
+                17,
+                45
+            ]
+        ],
+        "per_class_report": {
+            "Normal": {
+                "precision": 0.4961774342602705,
+                "recall": 0.6081762949232828,
+                "f1-score": 0.5464976404182474,
+                "support": 9711.0
+            },
+            "DoS": {
+                "precision": 0.8834979662986636,
+                "recall": 0.4076407506702413,
+                "f1-score": 0.5578792882039992,
+                "support": 7460.0
+            },
+            "Probe": {
+                "precision": 0.9221789883268483,
+                "recall": 0.09789343246592318,
+                "f1-score": 0.17699775952203137,
+                "support": 2421.0
+            },
+            "R2L": {
+                "precision": 0.12829121752959888,
+                "recall": 0.25164644714038126,
+                "f1-score": 0.1699438202247191,
+                "support": 2885.0
+            },
+            "U2R": {
+                "precision": 0.03507404520654715,
+                "recall": 0.6716417910447762,
+                "f1-score": 0.06666666666666667,
+                "support": 67.0
+            },
+            "accuracy": 0.4415809084457062,
+            "macro avg": {
+                "precision": 0.49304393032438576,
+                "recall": 0.4073997432489209,
+                "f1-score": 0.30359703500713275,
+                "support": 22544.0
+            },
+            "weighted avg": {
+                "precision": 0.6216438674161883,
+                "recall": 0.4415809084457062,
+                "f1-score": 0.4609689602520074,
+                "support": 22544.0
+            }
+        },
+        "classes": [
+            "Normal",
+            "DoS",
+            "Probe",
+            "R2L",
+            "U2R"
+        ]
+    },
+    "Decision Tree Baseline": {
+        "model_name": "Decision Tree Baseline",
+        "accuracy": 0.761000709723208,
+        "precision_macro": 0.8558052946582453,
+        "recall_macro": 0.5264818616976716,
+        "f1_macro": 0.5392748990966845,
+        "precision_weighted": 0.8102218604032024,
+        "recall_weighted": 0.761000709723208,
+        "f1_weighted": 0.7353953343391357,
+        "detection_rate": 0.6675757811891218,
+        "false_positive_rate": 0.06641952425084956,
+        "total_normal": 9711,
+        "false_positives": 645,
+        "total_attacks": 12833,
+        "detected_attacks": 8567,
+        "confusion_matrix": [
+            [
+                9066,
+                68,
+                574,
+                3,
+                0
+            ],
+            [
+                1509,
+                5934,
+                17,
+                0,
+                0
+            ],
+            [
+                565,
+                165,
+                1691,
+                0,
+                0
+            ],
+            [
+                2135,
+                0,
+                288,
+                462,
+                0
+            ],
+            [
+                57,
+                0,
+                0,
+                7,
+                3
+            ]
+        ],
+        "per_class_report": {
+            "Normal": {
+                "precision": 0.68001800180018,
+                "recall": 0.9335804757491505,
+                "f1-score": 0.78687670876188,
+                "support": 9711.0
+            },
+            "DoS": {
+                "precision": 0.962218258472515,
+                "recall": 0.7954423592493297,
+                "f1-score": 0.8709180303808616,
+                "support": 7460.0
+            },
+            "Probe": {
+                "precision": 0.657976653696498,
+                "recall": 0.6984717059066502,
+                "f1-score": 0.6776197154878781,
+                "support": 2421.0
+            },
+            "R2L": {
+                "precision": 0.9788135593220338,
+                "recall": 0.16013864818024262,
+                "f1-score": 0.2752457551385165,
+                "support": 2885.0
+            },
+            "U2R": {
+                "precision": 1.0,
+                "recall": 0.04477611940298507,
+                "f1-score": 0.08571428571428572,
+                "support": 67.0
+            },
+            "accuracy": 0.761000709723208,
+            "macro avg": {
+                "precision": 0.8558052946582453,
+                "recall": 0.5264818616976716,
+                "f1-score": 0.5392748990966845,
+                "support": 22544.0
+            },
+            "weighted avg": {
+                "precision": 0.8102218604032024,
+                "recall": 0.761000709723208,
+                "f1-score": 0.7353953343391357,
+                "support": 22544.0
+            }
+        },
+        "classes": [
+            "Normal",
+            "DoS",
+            "Probe",
+            "R2L",
+            "U2R"
+        ]
+    }
+}
